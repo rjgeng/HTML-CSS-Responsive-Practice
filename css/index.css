@@ -242,7 +242,7 @@ if we are designing mobile first and we are scaling up to larger screen we use m
     .logo{
         width: 10%;
     }
-    .link{
+    .links{
         width: 90%;
     }
     #about {
@@ -263,7 +263,7 @@ if we are designing mobile first and we are scaling up to larger screen we use m
         width: 90%;
     }
     .succulants, .tropicals, .cacti {
-        width: 40vh;
+        height: 40vh;
     }
     .one {
         order: 1;
@@ -282,7 +282,30 @@ if we are designing mobile first and we are scaling up to larger screen we use m
     .six {
         order: 6;
     }
-
+    footer{
+        justify-content: center;
+    }
+    .left, .right{
+        width: 90%;
+    }
+    .left div{
+        line-height: 2;
+    }
+    footer h2{
+        order: -2;
+    }
+    .right{
+        order: -1;
+    }
+    .right img{
+        width: 70%;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .copyright p{
+        margin-right: 0;
+    }
 
 
 
