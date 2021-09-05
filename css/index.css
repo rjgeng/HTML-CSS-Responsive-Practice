@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;    
+    /* border: 1px solid grey;     */
 }
 
 /* General Styles */
@@ -194,7 +194,7 @@ footer h3 {
     color: #fff;
     text-align: left;
 }
-footer a {
+footer * { 
     color: #fff;
 }
 .copyright {
@@ -204,5 +204,86 @@ footer a {
 .copyright p {
     margin-right: 3%;
     margin-top: 10%;
-    color: #fff;
+}
+
+/* Responsive Design */
+/* 
+two things needed to make a website responsive
+1. you need a viewpoint meta tag in the head of your HTML doc
+2. Media Queries - rules that we write that apply to specific screen sizes
+
+if we are designing desktop first and scaling down to smaller screens we use max-width
+if we are designing mobile first and we are scaling up to larger screen we use min-width
+
+*/
+
+/* Media Queries */
+/* Tablet */
+@media(max-width: 800px){
+/*When the screen size reaches 800px or smaller apply these styles */
+    #about {
+        height: 90vh;
+        background-image: right;
+    }
+    #about div {
+            width: 30%;
+            margin-right: 5%;
+    }
+    .text div {
+        width: 65%;
+    }
+}
+/* Phone */
+@media(max-width: 500px){
+/* When the screen size reaches 500px or smaller apply these styles */
+    nav {
+        flex-direction: column;
+    }
+    .logo{
+        width: 10%;
+    }
+    .link{
+        width: 90%;
+    }
+    #about {
+        background-image: none;
+        background-color: #dddee0;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #about div {
+        width: 90%;
+        margin-right: 0;
+    }
+    .container {
+        justify-content: center;
+    }
+    .text, .succulants, .tropicals, .cacti {
+        width: 90%;
+    }
+    .succulants, .tropicals, .cacti {
+        width: 40vh;
+    }
+    .one {
+        order: 1;
+    }
+    .two {
+        order: 2;
+    }.three {
+        order: 3;
+    }
+    .four {
+        order: 4;
+    }
+    .five {
+        order: 5;
+    }
+    .six {
+        order: 6;
+    }
+
+
+
+
 }
